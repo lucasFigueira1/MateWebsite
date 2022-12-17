@@ -1,0 +1,18 @@
+// Include any default variable overrides here (though functions won't be available)
+@import "complements/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+@import "complements/setup";
+@import "sections/header";
+@import "sections/home";
+@import "sections/about";
+@import "sections/catalog";
+@import "sections/recently";
+@import "sections/newsletter";
+@import "sections/footer";
+
+
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap");

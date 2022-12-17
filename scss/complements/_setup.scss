@@ -1,0 +1,28 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $body-font !important;
+    font-size: $normal-font-size;
+    background-color: $body-color;
+    color: $text-color;
+}
+
+h1, h2, h3 {
+    color: $title-color;
+    font-weight: $font-medium;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

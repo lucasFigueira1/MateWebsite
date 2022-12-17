@@ -1,0 +1,114 @@
+header {
+  z-index: $z-fixed;
+  transition: box-shadow 0.3s, background 0.4s;
+
+  nav {
+    .container-fluid {
+      margin-top: 4px;
+      .brand-name {
+        font-family: $title-font;
+        color: $title-color;
+        font-size: $h3-font-size;
+        font-weight: $font-semi-bold;
+        transition: color 0.3s;
+        display: flex;
+        align-items: center;
+        column-gap: 0.5rem;
+        #MateLogo {
+          width: 25px;
+          height: 25px;
+        }
+      }
+      .Nav {
+        ul {
+          .nav-link {
+            color: $title-color;
+            font-weight: $font-medium;
+            transition: color 0.4s;
+          }
+        }
+      }
+      .navbar-options {
+        #moon-button {
+          font-size: 1.25rem;
+          color: $title-color;
+          cursor: pointer;
+          transition: color 0.3s;
+        }
+        #bag-button {
+          font-size: 1.25rem;
+          color: $title-color;
+          cursor: pointer;
+          transition: color 0.3s;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    nav {
+      .container-fluid {
+        .navbar-options {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 1rem;
+          .ri-shopping-bag-line {
+            font-size: 24px;
+          }
+          .bars-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            z-index: $z-fixed;
+            .bars__menu-span {
+              display: block;
+              width: 100%;
+              height: 2px;
+              background-color: $text-color;
+              margin-top: 6px;
+              transform-origin: 0px 100%;
+              transition: all 300ms;
+            }
+            .activeline1__bars-menu {
+              transform: rotate(45deg) translate(-2px, 1px);
+            }
+            .activeline2__bars-menu {
+              opacity: 0;
+              margin-left: -30px;
+            }
+            .activeline3__bars-menu {
+              transform: rotate(-45deg) translate(-4px, 2px);
+            }
+          }
+        }
+        .nav-active {
+          text-align: center;
+          z-index: $z-fixed;
+          display: block !important;
+          background-color: $body-color;
+          position: fixed;
+          top: 0;
+          width: 100%;
+          padding: 2rem;
+          transition: 0.8s ease-in-out;
+          height: auto;
+          right: 0;
+          box-shadow: 0px 8px 20px hsla(19, 64%, 24%, 0.1);
+        }
+        .Nav {
+          display: none;
+          ul {
+            text-align: center;
+            gap: 1.25rem;
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

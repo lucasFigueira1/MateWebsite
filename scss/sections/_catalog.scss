@@ -1,0 +1,74 @@
+#catalog {
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    .popular-subtitle {
+      color: $first-color;
+      font-family: $subtitle-font;
+      font-size: $h1-font-size;
+    }
+    .popular-title {
+      font-family: $title-font;
+      font-size: $h1-font-size;
+      margin-bottom: 1rem;
+    }
+  
+    .popular-container {
+      display: grid;
+      padding-top: 4rem;
+      grid-template-columns: 250px;
+      justify-content: center;
+      row-gap: 5.5rem;
+      .popular-card {
+        position: relative;
+        padding: 7rem 2rem 1.5rem;
+        box-shadow: 0 8px 20px hsla(19, 64%, 48%, 0.08);
+        background-color: $container-color;
+        border-radius: 1rem;
+        .popular-name {
+          font-size: $h3-font-size;
+          font-family: $title-font;
+          margin-bottom: 0.25rem;
+        }
+        .popular-img {
+          width: 130px;
+          height: 156px;
+          position: absolute;
+          inset: 0;
+          top: -3rem;
+          margin: 0 auto;
+          transition: transform 0.4s;
+        }
+        .popular-button {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+          transition: background 0.3s;
+          .popular-explore {
+            color: $first-color;
+            font-size: $h3-font-size;
+            font-weight: $font-medium;
+          }
+        }
+        .bag-button {
+          position: absolute;
+          bottom: 1.25rem;
+          left: 12.25rem;
+          cursor: pointer;
+          box-shadow: 0 4px 20px hsla(19, 64%, 20%, 0.2);
+          border-radius: 50%;
+          i {
+            background-color: $first-color;
+            padding: 6px;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+            color: #fff;
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+  }

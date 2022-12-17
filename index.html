@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/img/mate/mate.png" />
+    <!-- Remix icon import -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Mate</title>
+  </head>
+  <body>
+    <!-- go back to top button -->
+    <div class="button_back-to-top">
+      <i class="ri-arrow-up-s-line arrow_back-top" id="toTopArrow"></i>
+    </div>
+    <!-- Header -->
+    <header class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="brand-name" href="#">
+            <img src="assets/img/mate/mate.png" id="MateLogo" alt="image" />
+            Mate
+          </a>
+          <div class="Nav" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#catalog">Catalog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#recently">Recently</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#newsletter">Newsletter</a>
+              </li> -->
+            </ul>
+          </div>
+          <div class="navbar-options">
+            <!-- Change Theme button -->
+            <i class="ri-moon-line change-theme" id="moon-button"></i>
+            <!-- Bag -->
+            <i class="ri-shopping-bag-line" id="bag-button"></i>
+            <!-- Burger Bars -->
+            <div class="bars-menu">
+              <span class="bars__menu-span line1__bars-menu"></span
+              ><span class="bars__menu-span line2__bars-menu"></span
+              ><span class="bars__menu-span line3__bars-menu"></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- HOME -->
+      <section id="home">
+        <div class="container">
+          <div class="row home-container">
+            <div class="col-sm-12 hero_image-col">
+              <img src="assets/img/mate/heroimg.jpg" alt="home image" />
+            </div>
+            <div class="col-sm-12 hero_text-col">
+              <h1 class="home-title">
+                Get to know more
+                <div>
+                  <img
+                    src="assets/img/mate/depositphotos_118646604-stock-illustration-mate-tea-in-calabash-and.jpg"
+                    alt="home image"
+                  />
+                  about el Mate
+                </div>
+              </h1>
+              <p class="home-description">
+                More than a tradition, the best friend of the Argentines and
+                Uruguayans.
+              </p>
+              <a href="#catalog" class="home-button">
+                Get your own Mate<i class="ri-arrow-right-line"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 about-text-col">
+              <span class="about-subtitle">About us</span>
+              <h2 class="about-title">
+                <div>
+                  We provide
+                  <img
+                    src="assets/img/mate/depositphotos_118646604-stock-illustration-mate-tea-in-calabash-and.jpg"
+                    alt="about image"
+                  />
+                </div>
+                the best Mates
+              </h2>
+
+              <p>
+                We offer the widest variety of mates and bulbs in the country.
+                With us you will find everything related to the Mate for all
+                tastes and styles, of the highest quality and at competitive
+                prices.
+              </p>
+            </div>
+            <div class="col-sm-12 about-img-col">
+              <img
+                src="assets/img/mate/mate-and-thermic-bottle-set-semi-flat-by-Vexels.svg"
+                alt="mate image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CATALOG -->
+      <section id="catalog">
+        <span class="popular-subtitle">Catalog</span>
+        <h2 class="popular-title">The best stuff</h2>
+
+        <div class="popular-container container">
+          <article class="popular-card">
+            <img
+              class="popular-img"
+              src="assets/img/mate/catalogo-img/mate-main-catalogo-svg.png"
+              alt="mate image"
+            />
+
+            <h3 class="popular-name">Mates</h3>
+
+            <a href="#" class="popular-button">
+              <span class="popular-explore">Explore now</span>
+            </a>
+            <a class="bag-button">
+              <i class="ri-shopping-bag-line"></i>
+            </a>
+          </article>
+          <article class="popular-card">
+            <img
+              class="popular-img"
+              src="assets/img/mate/catalogo-img/bombilla-main-catologo-svg.png"
+              alt="bombilla image"
+            />
+
+            <h3 class="popular-name">Bombillas</h3>
+
+            <a href="#" class="popular-button">
+              <span class="popular-explore">Explore now</span>
+            </a>
+            <a href="#" class="bag-button">
+              <i class="ri-shopping-bag-line"></i>
+            </a>
+          </article>
+          <article class="popular-card">
+            <img
+              class="popular-img"
+              src="assets/img/mate/catalogo-img/matera-main-catalogo-svg.png"
+              alt="matera image"
+            />
+
+            <h3 class="popular-name">Materas</h3>
+
+            <a href="#" class="popular-button">
+              <span class="popular-explore">Explore now</span>
+            </a>
+            <a class="bag-button">
+              <i class="ri-shopping-bag-line"></i>
+            </a>
+          </article>
+        </div>
+      </section>
+      <!-- RECENTLY -->
+      <section id="recently">
+        <div class="container recently-container">
+          <div class="row">
+            <div class="col-sm-12 recently-text-col">
+              <span class="recently-subtitle">Recently Added</span>
+              <h2 class="recently-title">
+                Bolso Matero <br />
+                eco-cuero
+              </h2>
+
+              <p class="recently-description">
+                Take a look at what's new. And do not deprive yourself of a good
+                mate kit, enjoy and be happy.
+              </p>
+
+              <a href="#" class="recently-button">
+                Order now<i class="ri-arrow-right-line"></i
+              ></a>
+            </div>
+            <div class="col-sm-12 recently-img-col">
+              <img
+                src="assets/img/mate/catalogo-img/bolsomaterirugido.png"
+                alt="bolso image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- NEWSLETTER -->
+      <section id="newsletter">
+        <div class="container newsletter-container">
+          <div class="row newsletter-content">
+            <img
+              src="assets/img/mate/matebetweentext.jpg"
+              alt="newsletter image"
+              class="newsletter-img"
+            />
+
+            <div class="newsletter-data">
+              <span class="newsletter-subtitle">Newsletter</span>
+              <h2 class="newsletter-title">
+                Suscribe for <br />
+                Updates
+              </h2>
+
+              <form action="" class="newslleter-form">
+                <input
+                  type="email"
+                  placeholder="Enter email"
+                  class="newsletter-input"
+                />
+
+                <button class="newsletter-button">
+                  Suscribe <i class="ri-send-plane-line"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="footer-container">
+
+        <div class="footer-logo">
+          <img
+            src="assets/img/mate/mate.png"
+            id="FooterMateLogo"
+            alt="mate image"
+          />
+          <h3 class="footer-title">Mate</h3>
+        </div>
+
+        <span class="footer-subtitle">
+          Made with <i class="ri-heart-line"></i> By <a href="https://github.com/lucasFigueira1" target="_blank">Lucas Figueira</a>
+        </span>
+
+        <span class="copy-span">
+          Design inspired by
+          <a href="https://www.youtube.com/@Bedimcode" target="_blank">Bedimcode</a>
+        </span>
+      </div>
+    </footer>
+
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- MAIN JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
