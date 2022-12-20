@@ -8384,6 +8384,68 @@ body {
   background-color: #fff1eb;
   color: #68544b; }
 
+::-webkit-scrollbar {
+  background-color: #c4bdba;
+  width: 0.6rem;
+  border-radius: 0.5rem; }
+  ::-webkit-scrollbar-thumb {
+    background-color: #ada39f;
+    border-radius: 0.5rem; }
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #958983; }
+
+.dark-theme {
+  background-color: #171412;
+  color: #b4a197;
+  /*===== Catalog =====*/ }
+  .dark-theme h1, .dark-theme .h1,
+  .dark-theme h2,
+  .dark-theme .h2,
+  .dark-theme h3,
+  .dark-theme .h3 {
+    color: #e2d5d0; }
+  .dark-theme .button_back-to-top {
+    background-color: #d87b4f !important;
+    box-shadow: 0px 0px 20px 8px rgba(17, 8, 4, 0.2) !important; }
+    .dark-theme .button_back-to-top .arrow_back-top {
+      color: #171412 !important; }
+  .dark-theme #bag-button,
+  .dark-theme #theme-button {
+    color: #e2d5d0 !important; }
+  .dark-theme nav .brand-name {
+    color: #e2d5d0 !important; }
+  .dark-theme .boxshadowed-navjs {
+    box-shadow: 0 2px 8px rgba(17, 8, 4, 0.5) !important; }
+  .dark-theme .bars__menu-span {
+    background-color: #e2d5d0 !important; }
+  .dark-theme .nav-active {
+    background-color: #171412 !important;
+    box-shadow: 0 2px 8px rgba(17, 8, 4, 0.5) !important; }
+    .dark-theme .nav-active ul .nav-link {
+      color: #e2d5d0 !important; }
+  .dark-theme #catalog .popular-container .popular-card {
+    background-color: #1c1917 !important;
+    box-shadow: 0 8px 20px rgba(17, 8, 4, 0.2) !important; }
+  .dark-theme #footer {
+    box-shadow: 0px -1px 5px rgba(17, 8, 4, 0.2) !important; }
+    .dark-theme #footer .footer-container .footer-title {
+      color: #e2d5d0 !important; }
+  .dark-theme #newsletter .newsletter-container {
+    background-color: #1c1917 !important; }
+    .dark-theme #newsletter .newsletter-container .newsletter-content .newsletter-data .newsletter-title {
+      color: #e2d5d0 !important; }
+    .dark-theme #newsletter .newsletter-container .newsletter-content .newsletter-data .newslleter-form {
+      background-color: #171412 !important; }
+    .dark-theme #newsletter .newsletter-container .newsletter-content .newsletter-data .newsletter-input {
+      background-color: #171412 !important;
+      color: #b4a197 !important; }
+  .dark-theme::-webkit-scrollbar {
+    background-color: #292523; }
+    .dark-theme::-webkit-scrollbar-thumb {
+      background-color: #453e3b; }
+      .dark-theme::-webkit-scrollbar-thumb:hover {
+        background-color: #605752; }
+
 h1, .h1, h2, .h2, h3, .h3 {
   color: #2c2420;
   font-weight: 500; }
@@ -8419,7 +8481,7 @@ header {
       color: #2c2420;
       font-weight: 500;
       transition: color 0.4s; }
-    header nav .container-fluid .navbar-options #moon-button, header nav .container-sm .navbar-options #moon-button, header nav .container-md .navbar-options #moon-button, header nav .container-lg .navbar-options #moon-button, header nav .container-xl .navbar-options #moon-button, header nav .container-xxl .navbar-options #moon-button {
+    header nav .container-fluid .navbar-options #theme-button, header nav .container-sm .navbar-options #theme-button, header nav .container-md .navbar-options #theme-button, header nav .container-lg .navbar-options #theme-button, header nav .container-xl .navbar-options #theme-button, header nav .container-xxl .navbar-options #theme-button {
       font-size: 1.25rem;
       color: #2c2420;
       cursor: pointer;
@@ -8482,6 +8544,7 @@ header {
 
 .button_back-to-top {
   z-index: 100;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -8539,6 +8602,37 @@ header {
   #home .hero_image-col img {
     border-radius: 91px 159px; }
 
+@media screen and (min-width: 576px) {
+  #home .container .home-container {
+    display: grid;
+    grid-template-columns: 0.7fr;
+    justify-content: center; } }
+
+@media screen and (min-width: 992px) {
+  #home {
+    padding-block: 3rem 1.5rem;
+    margin-top: 0; }
+    #home .container .home-container {
+      position: relative;
+      grid-template-columns: 432px 463px;
+      padding-block: 7rem 3rem; }
+      #home .container .home-container .hero_image-col img {
+        width: 463px;
+        position: absolute;
+        top: 5rem;
+        right: 0; }
+      #home .container .home-container .hero_text-col {
+        order: -1;
+        text-align: initial; }
+        #home .container .home-container .hero_text-col .home-title {
+          font-size: 3rem !important; }
+          #home .container .home-container .hero_text-col .home-title div {
+            justify-content: initial; }
+            #home .container .home-container .hero_text-col .home-title div img {
+              width: 60px !important; }
+        #home .container .home-container .hero_text-col .home-description {
+          padding-inline: 0 6rem; } }
+
 #about {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -8564,6 +8658,16 @@ header {
     #about .container .row .about-img-col img {
       width: 300px;
       height: 300px; }
+
+@media screen and (min-width: 576px) {
+  #about .container .row {
+    display: grid;
+    grid-template-columns: .7fr;
+    justify-content: center; } }
+
+@media screen and (min-width: 992px) {
+  #about {
+    padding-block: 3rem 1.5rem; } }
 
 #catalog {
   text-align: center;
@@ -8628,6 +8732,12 @@ header {
           color: #fff;
           font-size: 1.25rem; }
 
+@media screen and (min-width: 767px) {
+  #catalog .popular-container {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    column-gap: 3rem; } }
+
 #recently {
   text-align: center;
   padding-top: 2rem;
@@ -8661,6 +8771,12 @@ header {
     #recently .recently-container .row .recently-img-col img {
       width: 300px;
       justify-self: center; }
+
+@media screen and (min-width: 576px) {
+  #recently .container .row {
+    display: grid;
+    grid-template-columns: .7fr;
+    justify-content: center; } }
 
 #newsletter {
   margin-left: 1rem;
@@ -8722,6 +8838,12 @@ header {
           #newsletter .newsletter-container .newsletter-content .newsletter-data .newslleter-form .newsletter-input {
             color: #68544b;
             width: 90px; }
+
+@media screen and (min-width: 576px) {
+  #newsletter .newsletter-container .newsletter-content {
+    display: grid;
+    grid-template-columns: .7fr;
+    justify-content: center; } }
 
 #footer {
   text-align: center;

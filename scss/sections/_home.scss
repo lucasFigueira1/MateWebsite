@@ -1,6 +1,7 @@
 // Arrow back to top
 .button_back-to-top {
   z-index: $z-fixed;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -75,6 +76,64 @@
   .hero_image-col {
     img {
       border-radius: 91px 159px;
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  #home {
+    .container {
+      .home-container {
+        display: grid;
+        grid-template-columns: 0.7fr;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  // header {
+  //   nav {
+  //     .Nav {
+  //       margin-left: auto;
+  //     }
+  //   }
+  // }
+  #home {
+    padding-block: 3rem 1.5rem;
+    margin-top: 0;
+    .container {
+      .home-container {
+        position: relative;
+        grid-template-columns: 432px 463px;
+        // grid-template-columns: 330px 550px;
+        padding-block: 7rem 3rem;
+        .hero_image-col {
+          img {
+            width: 463px;
+            position: absolute;
+            top: 5rem;
+            right: 0;
+          }
+        }
+        .hero_text-col {
+          order: -1;
+          text-align: initial;
+          .home-title {
+            font-size: 3rem !important;
+            div {
+              justify-content: initial;
+              img {
+                width: 60px !important;
+              }
+            }
+          }
+          .home-description {
+            padding-inline: 0 6rem;
+          }
+        }
+      }
     }
   }
 }
