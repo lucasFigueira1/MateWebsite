@@ -1,5 +1,6 @@
 // Arrow back to top
 .button_back-to-top {
+  cursor: pointer;
   z-index: $z-fixed;
   display: flex;
   justify-content: center;
@@ -93,25 +94,24 @@
 }
 
 @media screen and (min-width: 992px) {
-  // header {
-  //   nav {
-  //     .Nav {
-  //       margin-left: auto;
-  //     }
-  //   }
-  // }
+  .button_back-to-top {
+    width: 40px;
+    height: 40px;
+    bottom: 5px;
+    right: 5px;
+  }
   #home {
     padding-block: 3rem 1.5rem;
     margin-top: 0;
     .container {
       .home-container {
         position: relative;
-        grid-template-columns: 432px 463px;
-        // grid-template-columns: 330px 550px;
+        column-gap: 7rem;
+        grid-template-columns: 350px 450px;
         padding-block: 7rem 3rem;
         .hero_image-col {
           img {
-            width: 463px;
+            width: 450px;
             position: absolute;
             top: 5rem;
             right: 0;
@@ -121,16 +121,59 @@
           order: -1;
           text-align: initial;
           .home-title {
-            font-size: 3rem !important;
-            div {
+            font-size: $biggest-font-size !important;
+            &:nth-child(1) {
               justify-content: initial;
+              align-items: initial;
               img {
                 width: 60px !important;
               }
             }
           }
           .home-description {
+            padding-inline: 0 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #home {
+    .container {
+      .home-container {
+        column-gap: 4rem;
+        grid-template-columns: 577px 450px;
+        justify-content: center;
+        .hero_text-col {
+          .home-title {
+            font-size: 4rem !important;
+          }
+          .home-description {
             padding-inline: 0 6rem;
+            font-size: 1rem !important;
+          }
+        }
+        .hero_image-col {
+          img {
+            right: 3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #home {
+    .container {
+      .home-container {
+        column-gap: 10rem;
+        grid-template-columns: 620px 460px;
+        .hero_text-col {
+          .home-description {
+            padding-inline: 0 12rem;
           }
         }
       }

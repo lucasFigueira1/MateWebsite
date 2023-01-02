@@ -23,10 +23,6 @@ body {
   }
 }
 
-.boxshadowed-navjs {
-  // box-shadow: ;
-}
-
 .dark-theme {
   background-color: $dark-body-color;
   color: $dark-text-color;
@@ -34,6 +30,14 @@ body {
   h2,
   h3 {
     color: $dark-title-color;
+  }
+
+  // nav active when scrolling down
+  .fixedHeader {
+    box-shadow: 0 2px 8px hsla(19, 64%, 24%, 0.1);
+    background-color: $dark-body-color;
+    color: $dark-text-color;
+    box-shadow: 0px 2px 8px hsla(19, 64%, 4%, 0.2) !important;
   }
 
   .button_back-to-top {
@@ -52,6 +56,13 @@ body {
   nav {
     .brand-name {
       color: $dark-title-color !important;
+    }
+    .Nav {
+      ul {
+        .nav-link {
+          color: $dark-title-color !important;
+        }
+      }
     }
   }
 
@@ -88,6 +99,11 @@ body {
     .footer-container {
       .footer-title {
         color: $dark-title-color !important;
+      }
+      span {
+        a {
+          color: $dark-title-color;
+        }
       }
     }
   }

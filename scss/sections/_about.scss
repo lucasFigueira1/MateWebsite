@@ -52,11 +52,64 @@
 
 @media screen and (min-width: 992px) {
   #about {
-    padding-block: 3rem 1.5rem;
-    // .container {
-    //   .row {
-        
-    //   }
-    // }
+    padding-block: 7rem 1.5rem;
+    .container {
+      .about-container {
+        grid-template-columns: 350px 460px;
+        align-items: center;
+        column-gap: 7rem;
+        .about-text-col {
+          text-align: initial;
+          order: 1;
+          .about-subtitle {
+            margin-bottom: .75rem;
+          }
+          .about-title {
+            font-size: $biggest-font-size;
+            div {
+              img {
+                width: 50px;
+              }
+            }
+          }
+          p {
+            padding: 0;
+            max-width: 420px;
+          }
+        }
+        .about-img-col {
+          img {
+            width: 450px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  #about {
+    .container {
+      .row {
+        grid-template-columns: 330px 470px;
+        justify-content: center;
+        .about-text-col {
+          .about-title {
+            font-size: 4rem !important;
+          }
+          p {
+            font-size: 1rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1400px) {
+  #about {
+    .container {
+      .about-container {
+        grid-template-columns: 380px 480px;
+      }
+    }
   }
 }
