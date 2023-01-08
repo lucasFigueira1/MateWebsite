@@ -164,4 +164,23 @@ class ProductAddedToCart {
 let prod1 = new ProductAddedToCart("Mate Camionero", "Calabaza", 3220);
 prod1.productPricePlusIva();
 
-// 
+// SCROLL REVEAL ANIMATION 
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: '2500',
+  delay: '400'
+})
+
+sr.reveal(`.hero_text-col`,{origin: 'bottom'})
+sr.reveal(`.hero_image-col`,{origin: 'top'})
+sr.reveal(`.about-text-col`)
+sr.reveal(`.about-img-col`)
+sr.reveal(`.popular-subtitle`)
+sr.reveal(`.popular-title`)
+sr.reveal(`.popular-card`)
+sr.reveal(`.recently-text-col`)
+sr.reveal(`.recently-img-col`)
+sr.reveal(`.newsletter-data`)
+sr.reveal(`.newsletter-img`)
+

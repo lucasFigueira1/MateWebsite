@@ -8502,6 +8502,7 @@ header {
       transition: color 0.3s; }
 
 .fixedHeader {
+  top: 0;
   box-shadow: 0 2px 8px rgba(100, 47, 22, 0.1);
   position: fixed;
   z-index: 100;
@@ -8594,7 +8595,8 @@ header {
 
 #home {
   text-align: center;
-  margin-top: 2.5rem; }
+  margin-top: 2.5rem;
+  margin-bottom: 6rem; }
   #home .container .home-container {
     gap: 4rem;
     padding-top: 2rem; }
@@ -8643,7 +8645,7 @@ header {
     bottom: 5px;
     right: 5px; }
   #home {
-    padding-block: 3rem 1.5rem;
+    padding-block: 7rem 1.5rem;
     margin-top: 0; }
     #home .container .home-container {
       position: relative;
@@ -8653,7 +8655,7 @@ header {
       #home .container .home-container .hero_image-col img {
         width: 450px;
         position: absolute;
-        top: 5rem;
+        top: -3rem;
         right: 0; }
       #home .container .home-container .hero_text-col {
         order: -1;
@@ -8677,9 +8679,7 @@ header {
       font-size: 4rem !important; }
     #home .container .home-container .hero_text-col .home-description {
       padding-inline: 0 6rem;
-      font-size: 1rem !important; }
-    #home .container .home-container .hero_image-col img {
-      right: 3rem; } }
+      font-size: 1rem !important; } }
 
 @media screen and (min-width: 1400px) {
   #home .container .home-container {
@@ -8690,9 +8690,10 @@ header {
 
 #about {
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
   text-align: center; }
   #about .container .row {
+    margin: 5rem 0;
     gap: 3rem; }
     #about .container .row .about-text-col {
       padding-top: 2rem; }
@@ -8758,7 +8759,7 @@ header {
 #catalog {
   text-align: center;
   padding-top: 2rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 6rem; }
   #catalog .popular-subtitle {
     color: #d56e3f;
     font-family: "Dancing Script", cursive;
@@ -8851,7 +8852,7 @@ header {
 #recently {
   text-align: center;
   padding-top: 2rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 6rem; }
   #recently .recently-container .row {
     row-gap: 2rem; }
     #recently .recently-container .row .recently-text-col .recently-subtitle {
@@ -8921,7 +8922,7 @@ header {
   margin-left: 1rem;
   margin-right: 1rem;
   padding-top: 2rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 6rem; }
   #newsletter .newsletter-container {
     position: relative;
     background-color: #2f231d;
