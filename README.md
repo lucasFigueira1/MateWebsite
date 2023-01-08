@@ -1,5 +1,5 @@
 # MateWebsite
-Segunda Entrega coderHouse |
-PreEntrega2+Figueira
+Tercera Entrega coderHouse |
+PreEntrega3+Figueira
 
-Segunda entrega: Prompt, if (condicional), funtions, for (bucle), class y objetos, Arrays, Metodos de busqueda de arrays, DOM.
+Segunda entrega: Json, Storage, DOM y Eventos del usuario
