@@ -280,7 +280,7 @@ function cartTotalPrice() {
   const itemsTotalPrice = document.querySelector(".cart-total-price");
   emptyCart.forEach((item) => {
     const price = Number(item.price.replace("$", ""));
-    total = total + price * item.quantity;
+    total = Math.round(total + price * item.quantity);
   });
 
   itemsTotalPrice.innerHTML = `Total $${total}`;
