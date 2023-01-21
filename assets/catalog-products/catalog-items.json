@@ -1,0 +1,20 @@
+[
+
+    {
+        "img":"assets/img/mate/catalogo-img/mate-main-catalogo-svg.png",
+        "title": "Mate",
+        "price": "$12.88"
+    },
+    {
+        "img":"assets/img/mate/catalogo-img/bombilla-main-catologo-svg.png",
+        "title": "bombilla",
+        "price": "$8.99"
+    },
+    {
+        "img":"assets/img/mate/catalogo-img/matera-main-catalogo-svg.png",
+        "title": "Matera",
+        "price": "$18.70"
+    }
+
+]
+    

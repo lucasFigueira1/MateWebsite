@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Title -->
+    <title>Mate</title>
+    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +15,6 @@
     />
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/main.css" />
-    <title>Mate</title>
   </head>
   <body>
     <!-- go back to top button -->
@@ -41,16 +43,16 @@
               <li class="nav-item">
                 <a class="nav-link" href="#recently">Recently</a>
               </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="#newsletter">Newsletter</a>
-              </li> -->
             </ul>
           </div>
           <div class="navbar-options">
             <!-- Change Theme button -->
             <i class="ri-moon-line change-theme" id="theme-button"></i>
             <!-- Bag -->
-            <i class="ri-shopping-bag-line" id="bag-button"></i>
+            <div class="bag-container">
+              <span class="items-quantity">0</span>
+              <i class="ri-shopping-bag-line" id="bag-button"></i>
+            </div>
             <!-- Burger Bars -->
             <div class="bars-menu">
               <span class="bars__menu-span line1__bars-menu"></span
@@ -60,7 +62,17 @@
           </div>
         </div>
       </nav>
+      <!-- Shopping Cart -->
+    <div class="shopping-cart-box">
+      <div class="cart-body"></div>
+      <div class="check-n-buy">
+        <h3 class="cart-total-price">Total: 0</h3>
+        <button class="cart-buy-item">BUY</button>
+      </div>
+    </div>
     </header>
+
+    
 
     <main class="main">
       <!-- HOME -->
@@ -131,63 +143,14 @@
         <span class="popular-subtitle">Catalog</span>
         <h2 class="popular-title">The best stuff</h2>
 
-        <div class="popular-container container">
-          <article class="popular-card">
-            <img
-              class="popular-img"
-              src="assets/img/mate/catalogo-img/mate-main-catalogo-svg.png"
-              alt="mate image"
-            />
-
-            <h3 class="popular-name">Mates</h3>
-
-            <a href="#" class="popular-button">
-              <span class="popular-explore">Explore now</span>
-            </a>
-            <a class="bag-button">
-              <i class="ri-shopping-bag-line"></i>
-            </a>
-          </article>
-          <article class="popular-card">
-            <img
-              class="popular-img"
-              src="assets/img/mate/catalogo-img/bombilla-main-catologo-svg.png"
-              alt="bombilla image"
-            />
-
-            <h3 class="popular-name">Bombillas</h3>
-
-            <a href="#" class="popular-button">
-              <span class="popular-explore">Explore now</span>
-            </a>
-            <a href="#" class="bag-button">
-              <i class="ri-shopping-bag-line"></i>
-            </a>
-          </article>
-          <article class="popular-card">
-            <img
-              class="popular-img"
-              src="assets/img/mate/catalogo-img/matera-main-catalogo-svg.png"
-              alt="matera image"
-            />
-
-            <h3 class="popular-name">Materas</h3>
-
-            <a href="#" class="popular-button">
-              <span class="popular-explore">Explore now</span>
-            </a>
-            <a class="bag-button">
-              <i class="ri-shopping-bag-line"></i>
-            </a>
-          </article>
-        </div>
+        <div class="popular-container container"></div>
       </section>
       <!-- RECENTLY -->
       <section id="recently">
         <div class="container recently-container">
           <div class="row">
             <div class="col-sm-12 recently-text-col">
-              <span class="recently-subtitle">Recently Added</span>
+              <span class="recently-subtitle">Soon</span>
               <h2 class="recently-title">
                 Bolso Matero <br />
                 eco-cuero
@@ -198,7 +161,7 @@
                 mate kit, enjoy and be happy.
               </p>
 
-              <a href="#" class="recently-button">
+              <a class="recently-button">
                 Order now<i class="ri-arrow-right-line"></i
               ></a>
             </div>
@@ -266,7 +229,8 @@
         </span>
       </div>
     </footer>
-
+    <!-- SWEET ALERT 2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- SCROLL REVEAL -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- MAIN JS -->

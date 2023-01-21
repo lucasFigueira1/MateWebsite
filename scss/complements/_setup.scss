@@ -31,10 +31,13 @@ body {
   h3 {
     color: $dark-title-color;
   }
-
+  .shopping-cart-box {
+    background-color: $dark-container-color !important;
+    box-shadow: 0 8px 20px hsla(19, 64%, 4%, 0.2) !important;
+  }
   // nav active when scrolling down
   .fixedHeader {
-    box-shadow: 0 2px 8px hsla(19, 64%, 24%, 0.1);
+    // box-shadow: 0 2px 8px hsla(19, 64%, 24%, 0.1);
     background-color: $dark-body-color;
     color: $dark-text-color;
     box-shadow: 0px 2px 8px hsla(19, 64%, 4%, 0.2) !important;
@@ -47,7 +50,6 @@ body {
       color: $dark-body-color !important;
     }
   }
-
   #bag-button,
   #theme-button {
     color: $dark-title-color !important;
@@ -134,6 +136,28 @@ body {
       background-color: hsl(19, 8%, 25%);
       &:hover {
         background-color: hsl(19, 8%, 35%);
+      }
+    }
+  }
+  .catalog-items-row {
+    .catalog-items-col {
+      background-color: $dark-body-color;
+      box-shadow: -2px 6px 8px hsla(19, 64%, 4%, 0.2) !important;
+      .catalog-items-container {
+        .catalog-product-active {
+          background-color: $dark-container-color !important;
+          box-shadow: 0 0px 20px hsla(19, 64%, 4%, 0.2) !important;
+        }
+      }
+    }
+    .aside-catalog-col {
+      .item-quantity-select {
+        border-top: 1px solid $dark-text-color !important;
+        border-bottom: 1px solid $dark-text-color !important;
+        input {
+          color: $dark-body-color !important;
+          background-color: $dark-text-color !important;
+        }
       }
     }
   }
